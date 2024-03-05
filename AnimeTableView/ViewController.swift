@@ -1,19 +1,19 @@
-//
-//  ViewController.swift
-//  AnimeTableView
-//
-//  Created by Angsagan Kussaiynova on 02.03.2024.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageLabel: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
+    
+    var titleOfAnime = ""
+    var imageName = ""
+    var info = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        titleLabel.text = titleOfAnime
+        imageLabel.image = UIImage(named: imageName)
+        infoLabel.text = info
     }
-
-
+    
 }
-
