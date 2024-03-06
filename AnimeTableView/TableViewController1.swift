@@ -4,8 +4,8 @@ class TableViewController1: UITableViewController {
     
     class Anime {
         var title: String
-        var imageFileName = ""
-        var info = ""
+        var imageFileName = "defaultImage"
+        var info = "There is no information"
         
         init(title: String, imageFileName: String, info: String) {
             self.title = title
